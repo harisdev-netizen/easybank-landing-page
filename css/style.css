@@ -11,10 +11,129 @@ html {
   font-size: 112.5%;
 }
 
+h1, h2, h3 {
+  font-weight: 300;
+  color: #2d314d;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
   color: #f3f4f6;
+}
+
+.btn {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: block;
+}
+.btn--primary {
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #30c88f, #2bb7da);
+  transition: all 0.2s;
+  z-index: 1;
+}
+.btn--primary:hover {
+  transform: translateY(-3px);
+  background-image: linear-gradient(to right, #2bb7da, #30c88f);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.btn--primary:hover::after {
+  transform: scaleX(1.4), scaleY(1.6);
+  opacity: 0;
+}
+
+.header {
+  display: flex;
+  height: 8rem;
+  padding: 2.5rem;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  z-index: 10;
+}
+.header__mobile-menu {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  width: 100%;
+}
+.header__mobile-menu-list {
+  display: flex;
+  align-items: center;
+}
+.header__mobile-menu-list li {
+  color: #9597a5;
+  list-style-type: none;
+  margin-right: 2rem;
+  margin-top: auto 0;
+  position: relative;
+}
+.header__mobile-menu-list li:last-child {
+  margin-right: 0;
+}
+.header__mobile-menu-list li::after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  background: linear-gradient(to right, #30c88f, #2bb7da);
+  bottom: absolute;
+  width: -35px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.header__mobile-menu-list li:hover {
+  color: #2d314d;
+}
+.header__mobile-menu-list li:hover::after {
+  opacity: 1;
+}
+.header__logo {
+  margin-left: 3rem;
+}
+.header__menu-secondary {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

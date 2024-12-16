@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-    <title>Easybank Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Easybank</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
+    <header class="container">
+      <div class="header">
         <a href="#" class="header__logo" aria-label="Logo">
           <img src="./images/logo.svg" alt="logo" />
         </a>
@@ -19,7 +20,7 @@
           <img src="./images/icon-close.svg" alt="close" />
         </span>
         <nav class="header__mobile-menu">
-          <ul class="header__menu-list">
+          <ul class="header__mobile-menu-list">
             <li class="header__menu-item"><a href="#">Home</a></li>
             <li class="header__menu-item"><a href="#">About</a></li>
             <li class="header__menu-item"><a href="#">Contact</a></li>
@@ -28,7 +29,7 @@
           </ul>
           <ul class="header__menu-secondary">
             <li>
-              <button class="button button--primary">Request Invite</button>
+              <a class="btn btn--primary">Request Invite</a>
             </li>
           </ul>
         </nav>
@@ -36,7 +37,7 @@
     </header>
 
     <!-- <main class="main">
-      <section class="intro">
+      <section class="container">
         <div class="intro__container">
           <div class="intro__text">
             <h1 class="intro__title">Next generation digital banking</h1>
@@ -45,7 +46,7 @@
               one-stop-shop for spending, saving, budgeting, investing, and much
               more.
             </p>
-            <button class="button button--primary">Request Invite</button>
+            <button class="btn btn--primary">Request Invite</button>
           </div>
           <div class="intro__image">
             <img src="./images/image-mockups.png" class="intro__mockups" alt="mockups" />
@@ -213,7 +214,7 @@
           </ul>
         </div>
         <div class="footer__cta">
-          <button class="button button--primary">Request Invite</button>
+          <button class="btn btn--primary">Request Invite</button>
           <p class="footer__copyright">&copy; Easybank. All rights reserved.</p>
         </div>
       </div>

@@ -1,6 +1,14 @@
 body {
   font-family: 'Public Sans', sans-serif;
   font-weight: 400;
-
+  margin: 0;
+  padding: 0;
   color: $color-grayish-blue;
+}
+
+.btn {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1rem;
 }
