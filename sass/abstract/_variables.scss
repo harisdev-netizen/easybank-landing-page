@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 $color-white: #ffffff;
-$color-ligh-grayish-blue: #f3f4f6;
-$color-gray-blue: #9698a6;
+$color-grayish-blue: #f3f4f6;
 $color-light-gray-white: #fafafa;
 
+$color-gray-blue: #9698a6;
+$color-gray: #9597a5;
+
 $color-dark-blue: #2d314d;
-$color-green: #31d35c;
+
 $color-cyan: #2bb7da;
+$color-green: #30c88f;
+
+$color-green-blue: linear-gradient(153deg, #33d35e 0%, #2ab6d9 100%);
+

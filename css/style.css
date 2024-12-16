@@ -7,4 +7,14 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 112.5%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  color: #f3f4f6;
+}
+
 /*# sourceMappingURL=style.css.map */
