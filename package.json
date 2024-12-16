@@ -1,0 +1,14 @@
+{
+  "name": "easybank-landing-page",
+  "version": "1.0.0",
+  "description": "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "Haris",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}
