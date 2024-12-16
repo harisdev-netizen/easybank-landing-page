@@ -8,7 +8,14 @@
 }
 
 html {
-  font-size: 112.5%;
+  font-size: 100%;
+}
+
+p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.28px;
+  color: #9597a5;
 }
 
 h1, h2, h3 {
@@ -101,7 +108,7 @@ body {
 .header__mobile-menu-list li {
   color: #9597a5;
   list-style-type: none;
-  margin-right: 2rem;
+  margin-right: 3rem;
   margin-top: auto 0;
   position: relative;
 }
@@ -133,7 +140,45 @@ body {
 
 .container {
   max-width: 114rem;
+  width: 100%;
   margin: 0 auto;
+}
+
+.intro {
+  max-width: 114rem;
+  width: 100%;
+  display: flex;
+  background-color: #fafafa;
+  position: relative;
+  z-index: 1;
+}
+.intro__text {
+  max-width: 447px;
+  width: 100%;
+  margin: 0 auto;
+  padding-block: 8rem;
+}
+.intro__text--title {
+  font-weight: lighter;
+}
+.intro__description {
+  max-width: 396px;
+  width: 100%;
+  color: #9597a5;
+  margin-bottom: 2rem;
+}
+.intro__image {
+  position: relative;
+  display: block;
+  max-width: 50%;
+  background-image: url(../../images/bg-intro-desktop.svg);
+  background-position: -4rem -16rem;
+  background-repeat: no-repeat;
+}
+.intro__mockups {
+  position: relative;
+  top: -71px;
+  right: -125px;
 }
 
 /*# sourceMappingURL=style.css.map */

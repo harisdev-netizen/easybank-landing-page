@@ -1,4 +1,47 @@
 .container {
   max-width: 114rem;
+  width: 100%;
   margin: 0 auto;
+}
+
+.intro {
+  max-width: 114rem;
+  width: 100%;
+  display: flex;
+  background-color: $color-light-gray-white;
+  position: relative;
+  z-index: 1;
+
+  &__text {
+    max-width: 447px;
+    width: 100%;
+    margin: 0 auto;
+    padding-block: 8rem;
+
+    &--title {
+      font-weight: lighter;
+    }
+  }
+
+  &__description {
+    max-width: 396px;
+    width: 100%;
+    color: $color-gray;
+    margin-bottom: 2rem;
+  }
+
+  &__image {
+    position: relative;
+    display: block;
+    max-width: 50%;
+    background-image: url(../../images/bg-intro-desktop.svg);
+    background-position: -4rem -16rem;
+    background-repeat: no-repeat;
+  }
+
+  &__mockups {
+    position: relative;
+    top: -71px;
+    right: -125px;
+  }
 }
