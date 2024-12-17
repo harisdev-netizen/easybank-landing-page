@@ -12,6 +12,8 @@
   position: relative;
   z-index: 1;
 
+  overflow-x: hidden;
+
   &__text {
     max-width: 447px;
     width: 100%;
@@ -43,5 +45,14 @@
     position: relative;
     top: -71px;
     right: -125px;
+  }
+}
+
+.features {
+  background: $color-grayish-blue;
+
+  &__intro {
+    width: 55%;
+    padding-bottom: 3rem;
   }
 }

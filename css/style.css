@@ -60,6 +60,10 @@ body {
   line-height: 1rem;
 }
 
+.u-padding {
+  padding: 5rem;
+}
+
 .btn {
   border: none;
   padding: 1rem 2.5rem;
@@ -151,6 +155,7 @@ body {
   background-color: #fafafa;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 .intro__text {
   max-width: 447px;
@@ -179,6 +184,14 @@ body {
   position: relative;
   top: -71px;
   right: -125px;
+}
+
+.features {
+  background: #f3f4f6;
+}
+.features__intro {
+  width: 55%;
+  padding-bottom: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
