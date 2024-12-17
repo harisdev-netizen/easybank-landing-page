@@ -3,11 +3,22 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
   font-size: 100%;
+
+  @include responsive(tablet-landscape) {
+    font-size: 56.25%;
+  }
+
+  @include responsive(tablet-portrait) {
+    font-size: 50%;
+  }
+
+  @include responsive(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 p {
@@ -17,7 +28,9 @@ p {
   color: $color-gray;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 300;
 
   color: $color-dark-blue;
