@@ -1,0 +1,51 @@
+.blog {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    max-width: 281px;
+    width: 100%;
+    overflow: hidden;
+    background-color: $color-white;
+    border-radius: 0.3rem;
+    transition: all 0.2s ease-in-out;
+    backface-visibility: hidden;
+  }
+
+  &__author {
+    display: block;
+    font-size: 10px;
+    line-height: 0.5rem;
+    margin-bottom: 8px;
+    color: $color-gray;
+  }
+
+  &__content {
+    padding: 25px 24px;
+  }
+
+  &__card-title {
+    max-width: 207px;
+    width: 100%;
+    font-size: $default-faunt-size;
+    font-weight: lighter;
+    line-height: 1rem;
+    margin-bottom: 8px;
+    color: $color-dark-blue;
+  }
+
+  &__card-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $color-gray;
+  }
+
+  &__img {
+    max-width: 281px;
+    width: 100%;
+    min-height: 12rem;
+    margin-bottom: 25px;
+  }
+}
