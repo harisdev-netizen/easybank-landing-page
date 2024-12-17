@@ -90,10 +90,34 @@ body {
   opacity: 0;
 }
 
+.features__intro {
+  max-width: 41%;
+  width: 100%;
+  margin-bottom: 7.1rem;
+}
+.features__cards {
+  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.features__card {
+  max-width: 254px;
+  width: 100%;
+}
+.features__card__title {
+  margin: 2rem 0;
+}
+.features__icon {
+  margin-bottom: 40px;
+}
+.features__card-title {
+  margin-bottom: 26px;
+}
+
 .header {
   display: flex;
   height: 8rem;
-  padding: 2.5rem;
+  padding: 18px 165px;
   align-items: center;
   position: relative;
   background-color: #ffffff;
@@ -187,11 +211,8 @@ body {
 }
 
 .features {
+  padding: 96px 165px;
   background: #f3f4f6;
-}
-.features__intro {
-  width: 55%;
-  padding-bottom: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
