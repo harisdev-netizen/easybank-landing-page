@@ -12,6 +12,24 @@
     border-radius: 0.3rem;
     transition: all 0.2s ease-in-out;
     backface-visibility: hidden;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .1);
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(102%);
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    }
+  }
+
+  &__img {
+    max-width: 281px;
+    width: 100%;
+    min-height: 12rem;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    padding: 25px 24px;
   }
 
   &__author {
@@ -22,15 +40,11 @@
     color: $color-gray;
   }
 
-  &__content {
-    padding: 25px 24px;
-  }
-
   &__card-title {
     max-width: 207px;
     width: 100%;
     font-size: $default-faunt-size;
-    font-weight: lighter;
+    font-weight: 400;
     line-height: 1rem;
     margin-bottom: 8px;
     color: $color-dark-blue;
@@ -40,12 +54,5 @@
     font-size: 1rem;
     line-height: 1.5rem;
     color: $color-gray;
-  }
-
-  &__img {
-    max-width: 281px;
-    width: 100%;
-    min-height: 12rem;
-    margin-bottom: 25px;
   }
 }

@@ -76,6 +76,21 @@ body {
   border-radius: 0.3rem;
   transition: all 0.2s ease-in-out;
   backface-visibility: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.blog__card:hover {
+  cursor: pointer;
+  transform: scale(102%);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.blog__img {
+  max-width: 281px;
+  width: 100%;
+  min-height: 12rem;
+  margin-bottom: 25px;
+}
+.blog__content {
+  padding: 25px 24px;
 }
 .blog__author {
   display: block;
@@ -84,14 +99,11 @@ body {
   margin-bottom: 8px;
   color: #9597a5;
 }
-.blog__content {
-  padding: 25px 24px;
-}
 .blog__card-title {
   max-width: 207px;
   width: 100%;
   font-size: 1rem;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 1rem;
   margin-bottom: 8px;
   color: #2d314d;
@@ -100,12 +112,6 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #9597a5;
-}
-.blog__img {
-  max-width: 281px;
-  width: 100%;
-  min-height: 12rem;
-  margin-bottom: 25px;
 }
 
 .btn {
@@ -158,6 +164,59 @@ body {
   margin-bottom: 26px;
 }
 
+.footer {
+  display: flex;
+  padding: 48px 165px;
+  background-color: #2d314d;
+  color: #fafafa;
+}
+.footer a {
+  transition: all 0.3s;
+}
+.footer a:hover {
+  color: #30c88f;
+}
+.footer__logo {
+  max-width: 9rem;
+  width: 100%;
+}
+.footer__intro {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.footer ul {
+  list-style: none;
+}
+.footer__social {
+  display: inline-flex;
+  margin-top: 3rem;
+}
+.footer__social li:not(:last-child) {
+  margin-right: 0.7rem;
+}
+.footer__links {
+  max-width: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__links ul li {
+  margin-bottom: 1rem;
+}
+.footer__last {
+  text-align: right;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__last p {
+  font-size: 15px;
+  color: #9698a6;
+  margin-top: auto;
+}
+
 .header {
   display: flex;
   height: 8rem;
@@ -189,18 +248,22 @@ body {
 }
 .header__mobile-menu-list li::after {
   content: "";
-  display: block;
-  height: 0.2rem;
+  position: absolute;
+  height: 3px;
   background: linear-gradient(to right, #30c88f, #2bb7da);
-  bottom: absolute;
-  width: -35px;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
+  bottom: -20px;
+  width: 0;
+  left: 0;
+  transition: all 0.5s ease;
 }
 .header__mobile-menu-list li:hover {
-  color: #2d314d;
+  color: #000;
 }
 .header__mobile-menu-list li:hover::after {
+  width: 100%;
+  color: #2d314d;
+}
+.header__mobile-menu-list li:hover::after::after {
   opacity: 1;
 }
 .header__logo {

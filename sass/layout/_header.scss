@@ -31,16 +31,21 @@
 
         &::after {
           content: '';
-          display: block;
-          height: 0.2rem;
+          position: absolute;
+          height: 3px;
           background: linear-gradient(to right, $color-green, $color-cyan);
-          bottom: absolute;
-          width: -35px;
-          opacity: 0;
-          transition: all .4s ease-in-out;
+          bottom: -20px;
+          width: 0;
+          left: 0;
+          transition: all .5s ease;
         }
 
         &:hover {
+          color: $color-black;
+        }
+
+        &:hover::after {
+          width: 100%;
           color: $color-dark-blue;
 
           &::after {
