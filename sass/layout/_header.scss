@@ -7,16 +7,51 @@
   background-color: $color-white;
   z-index: 10;
 
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
   &__mobile-menu {
     display: flex;
     justify-content: space-evenly;
     max-width: 100%;
     width: 100%;
 
+    @media only screen and (max-width: 900px) {
+      display: none;
+      z-index: 13;
+      position: relative;
+      flex-direction: column;
+      background-color: $color-white;
+      border-radius: .3rem;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      color: $color-dark-blue;
+
+      transition: .2s all ease-in-out;
+      transition-delay: 900ms;
+      backface-visibility: hidden;
+    }
+
     &-list {
         display: flex;
         align-items: center;
         // justify-content: space-evenly;
+
+        @media only screen and (max-width: 900px) {
+          display: block;
+          text-align: center;
+          width: 100%;
+
+          // transform: translateX(2rem);
+          // opacity: 0;
+        }
 
       li {
         color: $color-gray;
@@ -24,6 +59,24 @@
         margin-right: 3rem;
         margin-top: auto 0;
         position: relative;
+
+        @media only screen and (max-width: 900px) {
+          margin-top: auto 0;
+          position: relative;
+          margin-right: 0;
+          
+          &:not(:last-child) {
+            margin-bottom: 1.3rem;
+          }
+
+          a {
+            color: $color-dark-blue;
+
+            &:hover {
+              color: $color-green;
+            }
+          }
+        }
 
         &:last-child {
           margin-right: 0;
@@ -38,6 +91,15 @@
           width: 0;
           left: 0;
           transition: all .5s ease;
+
+          @media only screen and (max-width: 900px) {
+            bottom: -5px;
+            left: 220px;
+            height: 2px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+          }
         }
 
         &:hover {
@@ -47,6 +109,10 @@
         &:hover::after {
           width: 100%;
           color: $color-dark-blue;
+
+          @media only screen and (max-width: 900px) {
+            width: 10%;
+          }
 
           &::after {
             opacity: 1;
@@ -58,9 +124,18 @@
 
   &__logo {
     margin-left: 3rem;
+
+    @media only screen and (max-width: 900px) {
+      margin: 0;
+      align-self: center;
+    }
   }
 
   &__menu-secondary {
     list-style-type: none;
+
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
 }

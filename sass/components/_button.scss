@@ -5,24 +5,39 @@
   cursor: pointer;
   display: block;
 
+  @media only screen and (max-width: 1170px) {
+    font-size: 2.3rem;
+    padding: 2rem 2.5rem;
+    border-radius: 3rem;
+    font-weight: normal;
+  }
+
   &--primary {
     text-transform: capitalize;
     text-decoration: none;
     position: relative;
     color: $color-white;
     background-image: linear-gradient(to right, $color-green, $color-cyan);
-    transition: all .2s;
+    transition: all 0.2s;
     z-index: 1;
 
     &:hover {
       transform: translateY(-3px);
       background-image: linear-gradient(to right, $color-cyan, $color-green);
-      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
 
       &::after {
         transform: scaleX(1.4), scaleY(1.6);
         opacity: 0;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header__mobile-btn--hamburger,
+  .header__mobile-btn--close {
+    // display: block;
+    display: none;
   }
 }

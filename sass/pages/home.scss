@@ -11,8 +11,12 @@
   background-color: $color-light-gray-white;
   position: relative;
   z-index: 1;
-
   overflow-x: hidden;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
 
   &__text {
     max-width: 447px;
@@ -23,6 +27,26 @@
     &--title {
       font-weight: lighter;
     }
+
+    @media only screen and (max-width: 1170px) {
+      padding-block: 0;
+      margin-bottom: 6rem;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      order: 2;
+    }
+  }
+
+  &__text--title {
+
+    @media only screen and (max-width: 1170px) {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
   }
 
   &__description {
@@ -30,6 +54,12 @@
     width: 100%;
     color: $color-gray;
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: 1170px) {
+      font-size: 2rem;
+      line-height: 1.3;
+      margin-bottom: 32px;
+    }
   }
 
   &__image {
@@ -39,18 +69,35 @@
     background-image: url(../../images/bg-intro-desktop.svg);
     background-position: -4rem -16rem;
     background-repeat: no-repeat;
+
+    @media only screen and (max-width: 1170px) {
+      order: 2;
+      top: -0.5rem;
+      // max-width: 100%;
+      max-width: 100%;
+      background-position: -10rem -50rem;
+    }
   }
 
   &__mockups {
     position: relative;
     top: -71px;
     right: -125px;
+
+    @media only screen and (max-width: 1170px) {
+      top: -71px;
+      width: 70%;
+    }
   }
 }
 
 .features {
   padding: 96px 165px;
   background: $color-grayish-blue;
+
+  @media only screen and (max-width: 900px) {
+    padding: 64px 10px;
+  }
 }
 
 .blog {

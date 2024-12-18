@@ -1,20 +1,61 @@
 .features {
-
   &__intro {
     max-width: 41%;
     width: 100%;
     margin-bottom: 7.1rem;
+
+    @media only screen and (max-width: 900px) {
+      max-width: 327px;
+      margin: 0 auto;
+      margin-bottom: 7rem;
+      text-align: center;
+    }
   }
-  
+
+  &__title {
+    @media only screen and (max-width: 900px) {
+      font-size: 32px;
+    }
+  }
+
+  &__description {
+    @media only screen and (max-width: 900px) {
+      font-size: 14px;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+
   &__cards {
     padding-top: 0;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__card {
     max-width: 254px;
     width: 100%;
+
+    @media only screen and (max-width: 900px) {
+      margin: 0 auto;
+
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-direction: column;
+      margin-bottom: 3rem;
+
+      &-description {
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
 
     &__title {
       margin: 2rem 0;
@@ -23,9 +64,17 @@
 
   &__icon {
     margin-bottom: 40px;
+
+    @media only screen and (max-width: 900px) {
+      margin-bottom: 24px;
+    }
   }
 
   &__card-title {
     margin-bottom: 26px;
+
+    @media only screen and (max-width: 900px) {
+      margin-bottom: 20px;
+    }
   }
 }

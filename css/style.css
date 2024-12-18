@@ -11,12 +11,12 @@ html {
 }
 @media (max-width: 75em) {
   html {
-    font-size: 56.25%;
+    font-size: 80%;
   }
 }
 @media (max-width: 56.25em) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
 }
 @media (min-width: 112.5em) {
@@ -137,6 +137,14 @@ body {
   cursor: pointer;
   display: block;
 }
+@media only screen and (max-width: 1170px) {
+  .btn {
+    font-size: 2.3rem;
+    padding: 2rem 2.5rem;
+    border-radius: 3rem;
+    font-weight: normal;
+  }
+}
 .btn--primary {
   text-transform: capitalize;
   text-decoration: none;
@@ -156,19 +164,62 @@ body {
   opacity: 0;
 }
 
+@media only screen and (max-width: 900px) {
+  .header__mobile-btn--hamburger,
+  .header__mobile-btn--close {
+    display: none;
+  }
+}
 .features__intro {
   max-width: 41%;
   width: 100%;
   margin-bottom: 7.1rem;
+}
+@media only screen and (max-width: 900px) {
+  .features__intro {
+    max-width: 327px;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .features__title {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .features__description {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+  }
 }
 .features__cards {
   padding-top: 0;
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 900px) {
+  .features__cards {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .features__card {
   max-width: 254px;
   width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .features__card {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .features__card-description {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+  }
 }
 .features__card__title {
   margin: 2rem 0;
@@ -176,8 +227,18 @@ body {
 .features__icon {
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 900px) {
+  .features__icon {
+    margin-bottom: 24px;
+  }
+}
 .features__card-title {
   margin-bottom: 26px;
+}
+@media only screen and (max-width: 900px) {
+  .features__card-title {
+    margin-bottom: 20px;
+  }
 }
 
 .footer {
@@ -242,15 +303,49 @@ body {
   background-color: #ffffff;
   z-index: 10;
 }
+@media only screen and (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
 .header__mobile-menu {
   display: flex;
   justify-content: space-evenly;
   max-width: 100%;
   width: 100%;
 }
+@media only screen and (max-width: 900px) {
+  .header__mobile-menu {
+    display: none;
+    z-index: 13;
+    position: relative;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    color: #2d314d;
+    transition: 0.2s all ease-in-out;
+    transition-delay: 900ms;
+    backface-visibility: hidden;
+  }
+}
 .header__mobile-menu-list {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 900px) {
+  .header__mobile-menu-list {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }
 .header__mobile-menu-list li {
   color: #9597a5;
@@ -258,6 +353,22 @@ body {
   margin-right: 3rem;
   margin-top: auto 0;
   position: relative;
+}
+@media only screen and (max-width: 900px) {
+  .header__mobile-menu-list li {
+    margin-top: auto 0;
+    position: relative;
+    margin-right: 0;
+  }
+  .header__mobile-menu-list li:not(:last-child) {
+    margin-bottom: 1.3rem;
+  }
+  .header__mobile-menu-list li a {
+    color: #2d314d;
+  }
+  .header__mobile-menu-list li a:hover {
+    color: #30c88f;
+  }
 }
 .header__mobile-menu-list li:last-child {
   margin-right: 0;
@@ -272,6 +383,13 @@ body {
   left: 0;
   transition: all 0.5s ease;
 }
+@media only screen and (max-width: 900px) {
+  .header__mobile-menu-list li::after {
+    bottom: -5px;
+    left: 220px;
+    height: 2px;
+  }
+}
 .header__mobile-menu-list li:hover {
   color: #000;
 }
@@ -279,14 +397,30 @@ body {
   width: 100%;
   color: #2d314d;
 }
+@media only screen and (max-width: 900px) {
+  .header__mobile-menu-list li:hover::after {
+    width: 10%;
+  }
+}
 .header__mobile-menu-list li:hover::after::after {
   opacity: 1;
 }
 .header__logo {
   margin-left: 3rem;
 }
+@media only screen and (max-width: 900px) {
+  .header__logo {
+    margin: 0;
+    align-self: center;
+  }
+}
 .header__menu-secondary {
   list-style-type: none;
+}
+@media only screen and (max-width: 900px) {
+  .header__menu-secondary {
+    display: none;
+  }
 }
 
 .container {
@@ -304,6 +438,12 @@ body {
   z-index: 1;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 900px) {
+  .intro {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+}
 .intro__text {
   max-width: 447px;
   width: 100%;
@@ -313,11 +453,37 @@ body {
 .intro__text--title {
   font-weight: lighter;
 }
+@media only screen and (max-width: 1170px) {
+  .intro__text {
+    padding-block: 0;
+    margin-bottom: 6rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order: 2;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .intro__text--title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+}
 .intro__description {
   max-width: 396px;
   width: 100%;
   color: #9597a5;
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 1170px) {
+  .intro__description {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 32px;
+  }
 }
 .intro__image {
   position: relative;
@@ -327,15 +493,34 @@ body {
   background-position: -4rem -16rem;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 1170px) {
+  .intro__image {
+    order: 2;
+    top: -0.5rem;
+    max-width: 100%;
+    background-position: -10rem -50rem;
+  }
+}
 .intro__mockups {
   position: relative;
   top: -71px;
   right: -125px;
 }
+@media only screen and (max-width: 1170px) {
+  .intro__mockups {
+    top: -71px;
+    width: 70%;
+  }
+}
 
 .features {
   padding: 96px 165px;
   background: #f3f4f6;
+}
+@media only screen and (max-width: 900px) {
+  .features {
+    padding: 64px 10px;
+  }
 }
 
 .blog {

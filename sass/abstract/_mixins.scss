@@ -5,7 +5,7 @@
     } // 600px
   }
 
-  @if $breakpoint == tablet-portrait {
+  @if $breakpoint == tablet-potrait {
     @media (max-width: 56.25em) {
       @content;
     } // 900px

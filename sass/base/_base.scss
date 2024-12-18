@@ -9,11 +9,11 @@ html {
   font-size: 100%;
 
   @include responsive(tablet-landscape) {
-    font-size: 56.25%;
+    font-size: 80%;
   }
 
-  @include responsive(tablet-portrait) {
-    font-size: 50%;
+  @include responsive(tablet-potrait) {
+    font-size: 55%;
   }
 
   @include responsive(big-desktop) {
