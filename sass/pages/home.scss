@@ -103,4 +103,8 @@
 .blog {
   padding: 96px 165px;
   background-color: $color-light-gray-white;
+
+  @media only screen and (max-width: 900px) {
+    padding: 64px 24px;
+  }
 }
