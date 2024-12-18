@@ -7,7 +7,7 @@
   background-color: $color-white;
   z-index: 10;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@
     max-width: 100%;
     width: 100%;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       display: none;
       z-index: 13;
       position: relative;
@@ -44,7 +44,7 @@
         align-items: center;
         // justify-content: space-evenly;
 
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 1024px) {
           display: block;
           text-align: center;
           width: 100%;
@@ -60,7 +60,7 @@
         margin-top: auto 0;
         position: relative;
 
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 1024px) {
           margin-top: auto 0;
           position: relative;
           margin-right: 0;
@@ -92,7 +92,7 @@
           left: 0;
           transition: all .5s ease;
 
-          @media only screen and (max-width: 900px) {
+          @media only screen and (max-width: 1024px) {
             bottom: -5px;
             left: 220px;
             height: 2px;
@@ -110,7 +110,7 @@
           width: 100%;
           color: $color-dark-blue;
 
-          @media only screen and (max-width: 900px) {
+          @media only screen and (max-width: 1024px) {
             width: 10%;
           }
 
@@ -125,7 +125,7 @@
   &__logo {
     margin-left: 3rem;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       margin: 0;
       align-self: center;
     }
@@ -134,7 +134,7 @@
   &__menu-secondary {
     list-style-type: none;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       display: none;
     }
   }

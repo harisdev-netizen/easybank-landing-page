@@ -13,7 +13,7 @@
   z-index: 1;
   overflow-x: hidden;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1024px) {
     flex-direction: column-reverse;
     overflow: hidden;
   }
@@ -95,7 +95,7 @@
   padding: 96px 165px;
   background: $color-grayish-blue;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1024px) {
     padding: 64px 10px;
   }
 }
@@ -104,7 +104,7 @@
   padding: 96px 165px;
   background-color: $color-light-gray-white;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1024px) {
     padding: 64px 24px;
   }
 }

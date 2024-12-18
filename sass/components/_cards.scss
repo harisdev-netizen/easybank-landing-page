@@ -4,7 +4,7 @@
     width: 100%;
     margin-bottom: 7.1rem;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       max-width: 327px;
       margin: 0 auto;
       margin-bottom: 7rem;
@@ -13,13 +13,13 @@
   }
 
   &__title {
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       font-size: 32px;
     }
   }
 
   &__description {
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       font-size: 14px;
       line-height: 1.2;
       text-align: center;
@@ -31,7 +31,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       text-align: center;
       flex-wrap: wrap;
       gap: 10px;
@@ -42,7 +42,7 @@
     max-width: 254px;
     width: 100%;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       margin: 0 auto;
       margin-bottom: 2rem;
 
@@ -61,7 +61,7 @@
   &__icon {
     margin-bottom: 40px;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       margin-bottom: 24px;
     }
   }
@@ -69,7 +69,7 @@
   &__card-title {
     margin-bottom: 26px;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       font-size: 20px;
       margin-bottom: 16px;
     }

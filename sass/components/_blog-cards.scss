@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       gap: 10px;
       flex-wrap: wrap;
       justify-content: center;
@@ -60,7 +60,7 @@
     margin-bottom: 8px;
     color: $color-dark-blue;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       font-size: 16px;
       line-height: 1.1;
     }
@@ -71,7 +71,7 @@
     line-height: 1.5rem;
     color: $color-gray;
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1024px) {
       font-size: 13px;
       line-height: 1.55;
     }
