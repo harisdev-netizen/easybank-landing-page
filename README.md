@@ -22,7 +22,7 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 
 ## Live Preview
-- [Netlify](https://www.netlify.com/)
+- [Netlify](https://effortlessbanking.netlify.app/)
 
 ## Got feedback for me?
 
