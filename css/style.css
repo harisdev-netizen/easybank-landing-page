@@ -80,6 +80,10 @@ body {
   padding: 5rem;
 }
 
+.btn-footer-margin {
+  margin-bottom: 32px;
+}
+
 .blog__body {
   display: flex;
   justify-content: space-between;
@@ -310,7 +314,8 @@ body {
 @media only screen and (max-width: 1024px) {
   .footer__intro {
     width: 100%;
-    text-align: center;
+    margin-bottom: 32px;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -344,6 +349,7 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .footer__links {
+    margin-bottom: 32px;
     flex-direction: column;
     align-items: center;
   }
@@ -367,12 +373,12 @@ body {
   font-size: 15px;
   color: #9698a6;
   margin-top: auto;
-  margin-left: 0;
 }
 @media only screen and (max-width: 1024px) {
   .footer__last {
     text-align: center;
     align-items: center;
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 768px) {
