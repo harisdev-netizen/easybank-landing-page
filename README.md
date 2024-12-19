@@ -37,7 +37,7 @@ Users should be able to:
 
 
 ```scss
-@mixin respond-to($breakpoint) {
+@mixin responsive($breakpoint) {
   @if $breakpoint == desktop {
     @media (min-width: 1024px) { @content; }
   } @else if $breakpoint == tablet {
