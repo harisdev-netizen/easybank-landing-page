@@ -1,12 +1,20 @@
 .footer {
   display: flex;
+  justify-content: space-between;
   padding: 48px 165px;
   background-color: $color-dark-blue;
   color: $color-light-gray-white;
 
   @media only screen and (max-width: 1024px) {
     flex-direction: column;
+    align-items: center;
     padding: 24px 68px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 32px;
   }
 
   a {
@@ -20,12 +28,25 @@
   &__logo {
     max-width: 9rem;
     width: 100%;
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
   }
 
   &__intro {
     display: flex;
     flex-direction: column;
     width: 25%;
+
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
   }
 
   ul {
@@ -41,6 +62,10 @@
         margin-right: 0.7rem;
       }
     }
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 16px;
+    }
   }
 
   &__links {
@@ -53,6 +78,19 @@
       li {
         margin-bottom: 1rem;
       }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+
+      ul {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 16px;
     }
   }
 
@@ -67,6 +105,15 @@
       font-size: 15px;
       color: $color-gray-blue;
       margin-top: auto;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      text-align: center;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 16px;
     }
   }
 }
